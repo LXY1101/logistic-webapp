@@ -1,0 +1,183 @@
+.patient_list{
+    border-bottom: 1px solid #eee;
+    .patient_list_top{
+        height: 90px;
+        .patient_list_left{
+            width: 30%;
+            float: left;
+            margin-left: 5%;
+            height: 100%;
+            .patient_list_point{
+                color:@bgs;
+                font-size: 100px;
+                float: left;
+                height: 100%;
+                line-height: 90px;
+            }
+            .patient_list_title{
+                font-weight: bold;
+                font-size: @fs30;
+                float: left;
+                height: 100%;
+                line-height: 90px;
+                text-indent: 10px;
+            }
+        }
+        .patient_list_center{
+            width: 53%;
+            height: 100%;
+            float: left;
+        }
+        .patient_list_right{
+            width: 12%;
+            float: left;
+            color:#aaa;
+            font-size: 20px;
+            line-height: 90px;
+            background-image: url(../../icon/ups.png);
+            background-position: 35px 35px;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+        }
+        .patient_list_rights{
+            width: 12%;
+            float: left;
+            color:#aaa;
+            font-size: 20px;
+            line-height: 90px;
+            background-image: url(../../icon/downs.png);
+            background-position: 35px 35px;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;           
+        }
+    }
+    .patient_list_item{
+        width: 100%;
+        border-top: 1px solid #eee;
+        .patient_list_item_list{
+            height: 90px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            font-size: @fs30;
+            line-height: 90px;
+            .patient_list_item_list_left{
+                width: 15%;
+                float: left;
+                .patient_list_item_list_leftImg{
+                    width: 70px;
+                    height: 70px;
+                    float: left;
+                    margin-top: 10px;
+                    margin-left: 30px;
+                    border-radius: 12px;
+                }
+            }
+            .patient_list_item_list_center{
+                width: 65%;
+                float: left;
+                text-indent: 20px;
+                .patient_list_item_list_center_top{
+                    height: 50px;
+                    width: 100%;
+                    float: left;
+                    .patient_list_item_list_center_name{
+                        font-size: 30px;
+                        font-weight: bold;
+                        line-height: 55px;
+                        float: left;
+                    }
+                    .patient_list_item_list_center_img{
+                        width: 24px;
+                        height: 24px;
+                        float: left;
+                        margin-top: 12px;
+                        margin-left: 20px;
+                        .patient_list_item_list_center_src{
+                            width: 100%;
+                            height: 100%;
+                            float: left;
+                        }
+                    }
+                }
+                .patient_list_item_list_center_bottom{
+                    height: 40px;
+                    line-height: 40px;
+                    color:#aaa;
+                    font-size: @fs24;
+                    width: 100%;
+                    float: left;
+                    .patient_list_item_list_center_text{
+                        float: left;
+                    }
+                }
+            }
+            .patient_list_item_list_right{
+                width: 20%;
+                float: left;
+                text-align: center;
+                line-height: 90px;
+                color:#aaa;
+                font-size: @fs24;
+            }
+        }
+    }
+
+}
+
+.ask_search{
+    height: 80px;
+    background-color: #eee;
+    .ask_search_ipt{
+        width: 90%;
+        margin-left: 5%;
+        height: 60px;
+        margin-top: 10px;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius:16px;
+        float: left;
+        background-image: url(../../icon/search.png);
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+        background-position: 10px 10px; 
+        padding-left: 60px;
+        background-color: #fff;
+    }
+}
+.patient_top{
+    height: 200px;
+    margin-top: 100px;
+    .patient_top_list{
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: row; 
+        display: flex; 
+        .patient_top_item{
+            width: 25%;
+            flex: 1;
+            .patient_top_item_img{
+                width: 100%;
+                height: 100px;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center; /* 水平居中 */
+                align-items: center;     /* 垂直居中 */
+                .patient_top_item_igs{
+                    width: 100px;
+                    height: 100%;
+                    .patient_top_item_src{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .patient_top_item_text{
+                height: 80px;
+                text-align: center;
+                line-height: 80px;
+                font-size: @fs24;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

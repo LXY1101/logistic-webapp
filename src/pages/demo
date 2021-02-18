@@ -1,0 +1,32 @@
+ <form @submit.prevent="showData">
+                <div class="login_box">
+                    <div class="login_box_title_left">登录</div>
+                    <div class="login_box_title_right" @click="choose_assistant">{{isDoctor?'助理登录':'医生登录'}}</div>
+                    <div class="login_box_item">
+                        <div class="login_box_item_left">
+                            <img src="../assets/icon/mobilePhone.png">
+                        </div>
+                        <input type="text" placeholder="请输入用户名" v-model="formMess.username">
+                    </div>
+                    <div class="login_box_item">
+                        <div class="login_box_item_left">
+                            <img src="../assets/icon/lock.png">
+                        </div>
+                        <input type="password" placeholder="请输入您的密码" v-model="formMess.password">
+                    </div>
+                    <div class="login_box_item" v-show="isDoctor">
+                            <div class="login_box_item_left">
+                            <img src="../assets/icon/nine.png">
+                        </div>
+                        <div class="login_box_item_center">
+                            <span>选择代登医生</span>
+                        </div>
+                    </div>
+                    <div class="login_box_content">忘记密码？</div>
+                    <div class="login_box_bottom">
+                        <input type="submit" value="登录" class="login_button">
+                    </div>
+                    <div style="width:100%;height:30px;float:left"></div>
+                    <div style="clear:both"></div>
+                </div>
+            </form>

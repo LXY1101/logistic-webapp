@@ -1,0 +1,113 @@
+@width:100%;
+@height:100%;
+@float:left;
+
+.my_icon1{
+    background:url('../../icon/ic-1.png') center no-repeat;
+}
+.my_icon2{
+    background:url('../../icon/ic-4.png') center no-repeat;
+}
+.my_icon3{
+    background:url('../../icon/icon-set.png') center no-repeat;
+}
+
+.my_list{
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    font-size: @fs28;
+    letter-spacing: 1px;
+    float: left;
+    border-bottom: 1px solid #E4E4E4;
+    .my_list_left{
+        width: 13%;
+        height: 100%;
+        float: left;
+        background-size: 50px 50px;
+    }
+    .my_list_right{
+        width: 10%;
+        height: 100%;
+        float: left;
+        background:url('../../icon/angle-right.png') center no-repeat;
+        background-size: 40px 36px;
+    }
+    .my_list_text{
+        width: 77%;
+        float: left;
+        height: 100%;
+    }
+}
+
+.my_item{
+    width: 100%;
+    margin-top:30px;
+    float: left;
+    height: 80px;
+    .my_item_list{
+        width: 32%;
+        height: 100%;
+        float: left;
+        margin-left:12%;
+        text-align: center;
+        line-height:80px;
+        color:#fff;
+        letter-spacing: 1px;
+        font-size: @fs30;
+        border-radius: 36px;
+    }
+}
+
+.doctor_detail_top{
+    width: 100%;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url('../../images/doctor_bg.png');
+    background-repeat: no-repeat;
+    position: relative;
+    .doctor_detail_right{
+        width: 50%;
+        float: left;
+        height: 100%;
+        .mg{
+            margin-top:25px;
+            height: 30px;
+            line-height:30px;
+            font-size:@fs24;
+        }
+        .mgs{
+            margin-top:130px;
+            height: 40px;
+            line-height:40px;
+            font-size:@fs30;
+        }
+        .doctor_detail_title{
+            width: 100%;
+            color:#fff;
+            letter-spacing: 2px;
+        }
+    }
+    .doctor_detail_left{
+        width: 20%;
+        margin-left:5%;
+        float: left;
+        height: 100%;
+        .doctor_detail_lt{
+            width: 100%;
+            float: left;
+            display: flex;
+               -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            .doctor_detail_icon{
+                width: 110px;
+                height: 110px;
+                margin-top: 120px;
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@width:100%;
+@height:100%;
+@float:left;
+
+.content{
+    width: 88%;
+    margin-left: 6%;
+    float: @float;
+    margin-top:180px;
+    .list-data{
+        height: 100%;
+        overflow-y: hidden; 
+        .loading{
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-size: 24px;
+        }
+        .materials_list{
+            width: @width;
+            height: 200px;
+            border-radius: 20px;
+            margin-top: 20px;
+            position:relative;
+            background: #fff;
+            .materials_list_item_left{
+                width:24%;
+                float:@float;
+                height:@height;
+                letter-spacing:1px;
+                padding-left: 4%;
+                padding-top: 20px;
+                color: #808080;
+                box-sizing: border-box;
+                .materials_list_item_text{
+                    width:100%;
+                    float:@float;
+                    height:40px;
+                    line-height:40px;
+                    font-size:24px;
+                }
+            }
+            .materials_list_item_right{
+                width: 76%;
+                float: @float;
+                height: @height;
+                letter-spacing: 1px;
+                padding-top: 20px;
+                font-weight:bold;
+                box-sizing: border-box;
+                .materials_list_item_text{
+                    width:100%;
+                    float:@float;
+                    height:40px;
+                    line-height:40px;
+                    font-size:24px;
+                }
+            }        
+        }
+    }
+
+}
+
+.tab{
+    width:@width;
+    height: 80px;
+    position:fixed;
+    left:0;
+    top:100px;
+    z-index:100;
+    background-color:#fff;
+    .tab_item{
+        width:80%;
+        height:@height;
+        float:@float;
+        margin-left:10%;
+        .active{
+            width: 33%;
+            height: 80upx;
+            float: @float;
+            text-align: center;
+            line-height: 80upx;
+            font-size: 30upx;
+            letter-spacing: 2upx;
+            box-sizing:border-box;
+            color:@bgs !important;
+            border-bottom:5px solid @bgs;
+            font-weight:bold;	
+        }
+        .tabList{
+            width: 33%;
+            float:@float;
+            height: 80px;
+            text-align: center;
+            line-height:80px;
+            font-size: 28px;
+            color:#000;
+            letter-spacing: 1px;
+            box-sizing:border-box;
+            font-weight:bold;
+        }
+    }
+}
+

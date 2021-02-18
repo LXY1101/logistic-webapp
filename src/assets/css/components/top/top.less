@@ -1,0 +1,68 @@
+  @width:100%;
+  @height:100%;
+  @float:left;
+
+  .top{
+    width:@width;
+    float:@float;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    background-color:@bgs;
+    z-index: 102;
+    .top_left{
+      width: 20%;
+      height:@height;
+      float:@float;
+      .top_left_back{
+        background-image: url('../../../icon/icon_left.png');
+        background-size: 50px 45px;
+        background-repeat: no-repeat;
+        background-position: 10px 27.5px;  
+        width:@width;
+        height:@height;
+        float:@float;
+      }
+    }
+    .top_center{
+      width: 60%;
+      float:@float;
+      font-size: 30px;
+      color:#fff;
+      letter-spacing: 2px;
+      line-height: 100px;
+      text-align: center;
+      height:100%;
+      .top_text{
+        width:@width;
+        height:@height;
+        float:@float;
+      }
+      .top_select{
+        width:40%;
+        height:@height;
+        float:@float;
+        background-color:@bgs;
+        border:none;
+        outline: none;
+        line-height: 100px;
+        text-align:center;
+        color:#fff;
+        font-size: 28px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        background:url('../../../icon/select_down.png') right no-repeat;
+        background-size:30px 34px;
+      }
+    }
+  }
+
+  .top_select>option{
+      background-color:#fff;
+      color:@bgs;
+  }

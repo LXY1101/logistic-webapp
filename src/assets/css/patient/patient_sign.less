@@ -1,0 +1,93 @@
+.patient_sign_content{
+    margin-top: 100px;
+    .patient_sign_list{
+        .patient_sign_item{
+            height: 90px;
+            border-bottom: 1px solid #eee;
+            .patient_sign_item_left{
+                width: 18%;
+                float: left;
+                .patient_sign_item_img{
+                    width: 70px;
+                    height: 70px;
+                    float: left;
+                    margin-left: 40px;
+                    margin-top: 10px;
+                    border-radius:12px;
+                }
+            }
+            .patient_sign_item_center{
+                width: 47%;
+                float: left;
+                .patient_sign_item_top{
+                    line-height: 60px;
+                    height: 50px;
+                    width: 100%;
+                    float: left;
+                    .patient_sign_item_top_name{
+                        font-size: @fs26;
+                        font-weight: bold;
+                        float: left;
+                    }
+                    .patient_sign_item_top_img{
+                        width: 24px;
+                        height: 24px;
+                        float: left;
+                        margin-left: 15px;
+                        margin-top: 15px;
+                        .patient_sign_item_top_src{
+                            width: 100%;
+                            height: 100%;
+                            float: left;
+                        }
+                    }
+                    .patient_sign_item_top_age{
+                        color:#aaa;
+                        text-indent: 15px;
+                        font-size: @fs24;
+                        float: left;
+                    }
+                }
+                .patient_sign_item_bottom{
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    color:#aaa;
+                    font-size: @fs24;
+                    text-align: left;
+                }
+            }
+            .patient_sign_item_right{
+                width: 35%;
+                position: relative;
+                float: left;
+                font-size: @fs24;
+                text-align: center;
+                line-height: 45px;
+                
+                .patient_sign_item_resolve{
+                    width: 80px;
+                    height: 45px;
+                    position: absolute;
+                    top: 22.5px;
+                    right: 30px;
+                    background-color: #FF9900;
+                    color:#fff;
+                    border-radius:16px;
+                }
+                .patient_sign_item_reject{
+                    .patient_sign_item_resolve;
+                    background-color: #EEE;
+                    color:#000;
+                    right:130px;
+                }
+                .patient_sign_item_done{
+                    .patient_sign_item_resolve;
+                    background-color: #fff;
+                    color:#FF9900;  
+                    font-weight:bold;           
+                }
+            }
+        }
+    }
+}

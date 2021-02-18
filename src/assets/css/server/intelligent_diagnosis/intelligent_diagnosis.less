@@ -1,0 +1,111 @@
+@width:100%;
+@height:100%;
+@float:left;
+
+.intelligent_content{
+    width: @width;
+    padding-left: 2%;
+    margin-top: 120px;
+    box-sizing: border-box;
+    .diagnosis{
+        width: 86%;
+        height: @height;
+        margin-top: 20px;
+        .robot{
+            width: 14%;
+            height: width;
+            float: @float;
+            margin-right: 6%;
+        }
+        .robot>img{
+            width: 100%;
+            height: auto;
+            float: left;
+        }
+        .bubble{
+            max-width: 80%;
+            float: @float;
+            background: #fff;
+            border-radius: 20px;
+            position: relative;
+            box-sizing: border-box;
+            padding-left: 4%;
+            padding-right: 4%;
+            font-size: @fs30;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        //清除浮动  
+        .clear{
+            clear: both; 
+        }
+        //画聊天气泡的三角形
+        .bubble:before{
+            content:'';
+            position:absolute;
+            right:100%;
+            top:20px;
+            width:0;
+            height:0;
+            border-width:24px;
+            border-style:solid;
+            //设置其他边都为透明色
+            border-color:transparent;
+            // margin-bottom:17px;
+            //三角形的宽度
+            border-right-width:24px;
+            //向左方向的三角形的颜色
+            border-right-color:#fff;
+            color:#dddddd;
+        }
+    }
+    .options{
+        width: 50%;
+        height: 100%;
+        margin-left: 18%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        .option{
+            width: 46%;
+            background: #fff;
+            font-size: @fs30;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 10px; 
+            margin-top: 20px;
+        }
+        .choose_sex{
+            background: @bgs;
+            color: #fff;
+        }
+        .choose_age{
+            background: @bgs;
+            color: #fff;
+        }
+    }
+    .symptom{
+        width: 70%;
+        height: 100%;
+        margin-left: 18%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        .symptom_option,.more_option{
+            margin-top: 20px;
+            width: 22%;
+            background: #fff;
+            font-size: @fs30;
+            text-align: center;
+            border-radius: 10px; 
+            line-height: 50px;
+        }
+        .choose_symptom{
+            background: @bgs; 
+            color: #fff;
+        }
+        .more_option{
+            width: 40%;
+        }
+    }
+}
