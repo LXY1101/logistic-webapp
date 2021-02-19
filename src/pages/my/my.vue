@@ -14,21 +14,26 @@
             </div>
         </div>
         <div class="my_item">
-            <div class="my_item_list" style="background-color:#2893FF" @click="to_doctor()">我的活动</div>
+            <div class="my_item_list" style="background-color:#2893FF" @click="to_doctor()">账号管理</div>
             <div class="my_item_list" style="background-color:#FFCC00" @click="message()">消息提醒</div>
         </div>
         <div class="my_list" style="margin-top:20px;border-top: 1px solid #E4E4E4" @click="record()">
             <div class="my_list_left my_icon1"></div>
-            <div class="my_list_text">成长记录</div>
+            <div class="my_list_text">我的维修</div>
             <div class="my_list_right"></div>
         </div>
         <div class="my_list" @click="manager()">
             <div class="my_list_left my_icon2" ></div>
-            <div class="my_list_text">第二课堂成绩单</div>
+            <div class="my_list_text">我的失物</div>
+            <div class="my_list_right"></div>
+        </div>
+        <div class="my_list" @click="manager()">
+            <div class="my_list_left my_icon3" ></div>
+            <div class="my_list_text">我的市场</div>
             <div class="my_list_right"></div>
         </div>
         <div class="my_list" @click="to_set()">
-            <div class="my_list_left my_icon3"></div>
+            <div class="my_list_left my_icon4"></div>
             <div class="my_list_text">设置与帮助</div>
             <div class="my_list_right"></div>
         </div>
@@ -59,7 +64,7 @@ export default {
             this.$router.push({path:'/set'})
         },
         to_doctor(){
-            this.$router.push({path:'/doctor_team'})
+            this.$router.push({path:'/account_management'})
         },
         message(){
             this.$router.push({path:'/message_warn'})

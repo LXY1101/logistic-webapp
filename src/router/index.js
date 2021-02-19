@@ -34,10 +34,10 @@ export default new Router({
     { path: '/patient_send', component: resolve => require(['@/pages/patient/patient_send'], resolve) }, //签约推送
     { path: '/patient_assistSign', component: resolve => require(['@/pages/patient/patient_assistSign'], resolve) },//协助签约
     { path: '/message_warn', component: resolve => require(['@/pages/my/message_warn'], resolve) },//消息与提醒
-    { path: '/doctor_team', component: resolve => require(['@/pages/my/doctor_team'], resolve) },//医生顾问
+    { path: '/account_management', component: resolve => require(['@/pages/my/account_management'], resolve) },//医生顾问
     { path: '/send_record', component: resolve => require(['@/pages/my/send_record'], resolve) },//推送记录
     { path: '/login', component: resolve => require(['@/pages/login'], resolve) },//登录页
-    { path: '/organization_detail', component: resolve => require(['@/pages/campus/recommend/organization_detail'], resolve) },//组织详情页
-    { path: '/activity_detail', component: resolve => require(['@/pages/campus/recommend/activity_detail'], resolve) }//活动详情页
+    { path: '/organization_detail', component: resolve => require(['@/pages/campus/component/organization_detail'], resolve) },//组织详情页
+    { path: '/activity_detail', component: resolve => require(['@/pages/campus/component/activity_detail'], resolve) }//活动详情页
   ]
 })
