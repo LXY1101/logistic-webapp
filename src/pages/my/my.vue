@@ -70,10 +70,10 @@ export default {
             this.$router.push({path:'/message_warn'})
         },
         manager(){
-            this.$router.push({path:'/my_doctor'})
+            this.$router.push({path:'/lost'})
         },
         record(){
-            this.$router.push({path:'/send_record'})
+            this.$router.push({path:'/repair_record'})
         }
     },
     mounted() {

@@ -38,6 +38,10 @@ export default new Router({
     { path: '/send_record', component: resolve => require(['@/pages/my/send_record'], resolve) },//推送记录
     { path: '/login', component: resolve => require(['@/pages/login'], resolve) },//登录页
     { path: '/organization_detail', component: resolve => require(['@/pages/campus/component/organization_detail'], resolve) },//组织详情页
-    { path: '/activity_detail', component: resolve => require(['@/pages/campus/component/activity_detail'], resolve) }//活动详情页
+    { path: '/activity_detail', component: resolve => require(['@/pages/campus/component/activity_detail'], resolve) },//活动详情页
+    { path: '/repair_record', component: resolve => require(['@/pages/my/repair_record'], resolve) },
+    { path: '/repair_detail', component: resolve => require(['@/pages/my/repair_detail'], resolve) },
+    { path: '/repair_lists', component: resolve => require(['@/pages/my/repair_lists'], resolve) },
+    { path: '/lost', component: resolve => require(['@/pages/my/lost'], resolve) },
   ]
 })
